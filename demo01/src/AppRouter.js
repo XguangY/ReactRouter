@@ -2,6 +2,8 @@ import React from 'react'
 import { BrowserRouter  as Router, Route, Link} from 'react-router-dom'
 import Index from './pages/index'
 import List from './pages/list'
+import Home from './pages/home'
+
 function AppRouter () {
     return (
         <Router>
@@ -11,6 +13,7 @@ function AppRouter () {
             </ul>
             <Route path="/" exact component={Index}/>
             <Route path="/List/:id" component={List}/>
+            <Route path="/Home/" component={Home}/>
         </Router>
     )
 }

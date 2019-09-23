@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { Link, Redirect } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 class Index extends Component {
     constructor(props) {
@@ -10,10 +11,12 @@ class Index extends Component {
                 { cid: 789, context: 'adfasdas-3' }
             ]
         }
+        this.props.history.push('/Home/')
     }
     render() {
         return (
             <div>
+                {/* <Redirect to='/Home/'/> */}
                 <h3>Index21</h3>
                 <ul>
                     {
